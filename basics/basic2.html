@@ -1,0 +1,38 @@
+DOM (Document Object Model:
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <p class="myclass1">Good Morning</p>
+    <p class="myclass2"> Good Afternoon</p>
+    <p class="myclass2"> Goog Evening</p>
+    <p id="myid1"> Hi</p>
+
+    <script>
+        setTimeout(function(){
+            document.body.getElementsByTagName("h1")[0].innerHTML="Hello KLH"}, 5000
+        )
+
+         setTimeout(function(){
+            document.body.getElementsByClassName("myclass2")[0].innerHTML="Taggede Le"}, 5000
+        )
+        
+        setTimeout(function(){
+            document.querySelector("p").innerHTML="Hello All"
+        }, 10000)
+        
+
+    </script>
+
+    
+</body>
+</html>

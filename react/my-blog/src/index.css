@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+}
+
+* {
+  font-family: 'Orbitron', 'Quicksand', sans-serif;
+  color: #e0e0e0;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #232526 60%, #ffb800 100%);
+  box-shadow: 0 0 32px #ffb800, 0 4px 24px #00ffe7;
+  border-bottom: 3px solid #ffb800;
+}
+
+.navbar h1 {
+  color: #ffb800;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px #ffb800, 0 0 2px #fff;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 10px;
+  background: rgba(44,83,100,0.7);
+  box-shadow: 0 0 8px #00ffe7 inset;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.navbar a:hover {
+  color: #232526;
+  background: #ffb800;
+  box-shadow: 0 0 16px #ffb800;
+}
+
+.content {
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 36px;
+  background: rgba(20, 20, 40, 0.98);
+  border-radius: 20px;
+  box-shadow: 0 0 32px #00ffe7, 0 8px 32px rgba(44,83,100,0.18);
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #00ffe7;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  min-height: 80vh;
+  /* Add your crew image URL below */
+  background: url('https://static.wikia.nocookie.net/onepiece/images/8/8c/Straw_Hat_Pirates_Anime_Infobox.png') center/contain no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home h2 {
+  color: #ff00c8;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  text-shadow: 0 0 12px #ff00c8, 0 0 2px #fff;
+  letter-spacing: 2px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 22px;
+  color: #e0e0e0;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+.home button {
+  background: linear-gradient(90deg, #ff00c8 0%, #00ffe7 100%);
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 16px #ff00c8, 0 2px 12px #00ffe7;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+}
+
+.home button:hover {
+  background: linear-gradient(90deg, #00ffe7 0%, #ff00c8 100%);
+  transform: scale(1.08);
+  box-shadow: 0 0 32px #00ffe7, 0 0 16px #ff00c8;
+}
+
+.blog-preview {
+  background: linear-gradient(90deg, #232526 60%, #0f2027 100%);
+  border: 2px solid #ffb800;
+  box-shadow: 0 0 24px #ffb800, 0 2px 12px #00ffe7;
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin: 18px 0;
+  width: 350px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+  position: relative;
+}
+
+.blog-preview:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 48px #ffb800, 0 2px 24px #00ffe7;
+}
+
+.blog-preview h2 {
+  color: #ffb800;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #ffb800, 0 0 2px #fff;
+}
+
+.blog-preview p {
+  color: #00ffe7;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-shadow: 0 0 6px #00ffe7;
+}
